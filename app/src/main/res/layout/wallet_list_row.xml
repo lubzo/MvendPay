@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+   
+    <TextView
+        android:id="@+id/walletPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0773456738"
+        android:typeface="serif"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/walletNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/walletPhoneNumber"
+        android:textSize="10sp"
+        android:layout_marginTop="10dip"
+        android:text="MTN RWANDA" />
+
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/walletOptionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/walletPhoneNumber"
+        android:gravity="right"
+        android:text="default collection"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/walletItemID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:paddingBottom="2dp"
+        android:text="0" />
+
+
+</RelativeLayout>

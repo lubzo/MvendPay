@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.mvendpay.mvendpay.SplashScreenActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:text="Loading..." />
+    <ProgressBar
+        android:id="@+id/splash_screen_progress_bar"
+        android:layout_width="100dp"
+        android:layout_height="4dip"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+        android:layout_marginRight="5dp" />
+
+
+
+</RelativeLayout>

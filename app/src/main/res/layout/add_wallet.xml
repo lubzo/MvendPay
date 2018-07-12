@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+    <EditText
+        android:id="@+id/etSetOperator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:typeface="serif"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:hint="Enter Operator Name"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/etSetPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="5"
+        android:typeface="serif"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:background="@drawable/edit_text_background"
+        android:inputType="phone"
+        android:hint="Enter Phone Number"
+        android:layout_centerHorizontal="true" />
+
+
+</LinearLayout>

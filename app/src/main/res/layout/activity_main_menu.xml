@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_height="match_parent"
+    tools:context="com.mvendpay.mvendpay.MainMenuActivity">
+    <LinearLayout
+        android:id="@+id/llAccountBalance"
+        android:background="@color/headerColor"
+        android:orientation="vertical" android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="0.75"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tvMerchantName"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:typeface="serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/headerText"
+            android:layout_height="wrap_content"
+            android:text="Company Name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingLeft="60dp"
+            android:gravity="center"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="20dp"
+                android:gravity="right" android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="RWF" />
+
+            <TextView
+                android:id="@+id/tvAccountBalance"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.7"
+                android:text="140,000"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:typeface="serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/headerText"
+            android:layout_height="wrap_content"
+            android:text="Available Balance" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/main_menu_list"
+        android:layout_width="match_parent"
+        android:layout_weight="1.25"
+        android:divider="@null"
+        android:layout_height="0dp"
+        android:dividerHeight="0dip"
+        />
+</LinearLayout>
+
